@@ -1,5 +1,12 @@
 {
   "translation": {
-    "test": "Naomi's portfolio"
+    "hero": {
+      "fullName": "Naomi Krispel",
+      "profession": "Digital Illustrator · Cartoonist"
+    },
+    "myWorks": {
+      "title": "My works",
+      "cta": "More works"
+    }
   }
 }
