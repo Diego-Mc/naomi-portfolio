@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Hero } from './components/Hero/Hero'
 import stylisRTLPlugin from 'stylis-plugin-rtl'
 import { MyWorks } from './components/MyWorks/MyWorks'
+import { About } from './components/About/About'
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -22,6 +23,7 @@ export default function App() {
       <div dir="rtl">
         <Hero />
         <MyWorks />
+        <About />
       </div>
     </MantineProvider>
   )

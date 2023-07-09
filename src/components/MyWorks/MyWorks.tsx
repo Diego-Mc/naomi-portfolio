@@ -15,7 +15,7 @@ export function MyWorks() {
   if (!values) return null
 
   return (
-    <Box style={{ height: '1000px' }}>
+    <Box>
       <Title order={2}>{t('title')}</Title>
       {/* button */}
       <Marquee
