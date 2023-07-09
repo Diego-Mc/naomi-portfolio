@@ -5,6 +5,7 @@ import { Hero } from './components/Hero/Hero'
 import stylisRTLPlugin from 'stylis-plugin-rtl'
 import { MyWorks } from './components/MyWorks/MyWorks'
 import { About } from './components/About/About'
+import { Contact } from './components/Contact/Contact'
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -24,6 +25,7 @@ export default function App() {
         <Hero />
         <MyWorks />
         <About />
+        <Contact />
       </div>
     </MantineProvider>
   )
