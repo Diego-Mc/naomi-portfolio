@@ -1,4 +1,4 @@
-import { MantineProvider, Text, createEmotionCache } from '@mantine/core'
+import { MantineProvider, createEmotionCache } from '@mantine/core'
 import { defaultTheme } from './theme'
 import { useTranslation } from 'react-i18next'
 import { Hero } from './components/Hero/Hero'

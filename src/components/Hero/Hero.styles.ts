@@ -9,5 +9,27 @@ export const useStyles = createStyles((theme) => {
     titlesContainer: {
       height: '100vh',
     },
+    imageFg: {
+      position: 'absolute',
+      bottom: 0,
+      pointerEvents: 'none',
+    },
+    titlesImage: {
+      backgroundSize: 'auto',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+    },
+    imageBg: {
+      backgroundPosition: 'bottom',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+    },
+    imageTop: {
+      backgroundPosition: 'top',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed',
+    },
   }
 })
