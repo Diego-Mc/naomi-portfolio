@@ -2,14 +2,14 @@ import { Box, Image, Title } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import Marquee from 'react-marquee-slider'
 import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
-import { firestore } from '../../../firebase'
-import { collection } from 'firebase/firestore'
+import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
+import db from '../../db'
 
 export function MyWorks() {
   const { t } = useTranslation('translation', { keyPrefix: 'myWorks' })
 
-  const [values, loading, error] = useCollectionDataOnce(
-    collection(firestore, 'artworks')
+  const [values, loading, error] = useCollectionDataOnce<ArtworksSchema>(
+    db.artworks
   )
 
   if (!values) return null

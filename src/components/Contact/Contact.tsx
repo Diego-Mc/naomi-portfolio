@@ -16,6 +16,8 @@ import {
 } from '@mantine/core'
 import { isValidPhoneNumber } from '../../utils/validation.utils'
 
+// TODO: for UX: save info to localstorage after encryption, include date and check it before applying, if expired remove. on send also remove.
+
 export function Contact() {
   const form = useForm({
     initialValues: {

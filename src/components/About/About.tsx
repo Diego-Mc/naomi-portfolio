@@ -9,12 +9,9 @@ export function About() {
 
   const { t } = useTranslation('translation', { keyPrefix: 'about' })
 
-  const { ref, height } = useElementSize()
-
   return (
-    <Group grow ref={ref}>
+    <Group grow>
       <ImageWithFrame
-        height={height}
         frameSrc="frame.png"
         imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
       />

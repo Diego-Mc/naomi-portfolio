@@ -5,6 +5,7 @@ export const useStyles = createStyles((theme) => {
     frameContainer: {
       position: 'relative',
       width: '100%',
+      aspectRatio: 1 / 1,
     },
     imageContainer: {
       position: 'absolute',
@@ -18,11 +19,13 @@ export const useStyles = createStyles((theme) => {
       width: '100%',
       height: '100%',
       objectFit: 'cover',
+      pointerEvents: 'none',
     },
     frame: {
       position: 'absolute',
       width: '100%',
       height: '100%',
+      pointerEvents: 'none',
     },
   }
 })
