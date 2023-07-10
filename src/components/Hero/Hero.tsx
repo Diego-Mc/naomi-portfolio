@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useStyles } from './Hero.styles'
 
 export function Hero() {
-  const { t } = useTranslation('translation', { keyPrefix: 'hero' })
+  const { t } = useTranslation('hero')
 
   const { classes } = useStyles()
 

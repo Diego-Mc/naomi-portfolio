@@ -7,15 +7,15 @@ import { useElementSize } from '@mantine/hooks'
 export function About() {
   const { classes } = useStyles()
 
-  const { t } = useTranslation('translation', { keyPrefix: 'about' })
+  const { t } = useTranslation('about')
 
   return (
-    <Group grow>
+    <Group grow className={classes.container}>
       <ImageWithFrame
         frameSrc="frame.png"
         imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
       />
-      <Text fz="xl" fw={500} sx={{ whiteSpace: 'break-spaces' }} py={100}>
+      <Text fz="xl" fw={500} className={classes.text}>
         {t('text')}
       </Text>
     </Group>

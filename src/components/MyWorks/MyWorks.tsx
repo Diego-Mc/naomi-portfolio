@@ -6,11 +6,9 @@ import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
 import db from '../../db'
 
 export function MyWorks() {
-  const { t } = useTranslation('translation', { keyPrefix: 'myWorks' })
+  const { t } = useTranslation('myWorks')
 
-  const [values, loading, error] = useCollectionDataOnce<ArtworksSchema>(
-    db.artworks
-  )
+  const [values] = useCollectionDataOnce<ArtworksSchema>(db.artworks)
 
   if (!values) return null
 

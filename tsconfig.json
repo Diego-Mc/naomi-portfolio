@@ -21,6 +21,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "firebase.ts", "env.d.ts"],
+  "include": ["src", "firebase.ts", "env.d.ts", "vite.config.ts", "types.d.ts"],
+  "exclude": ["functions"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
