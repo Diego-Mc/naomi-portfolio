@@ -3,6 +3,7 @@ import { Button, Group, TextInput, Box, Textarea } from '@mantine/core'
 import { isValidPhoneNumber } from '../../../../utils/validation.utils'
 import { useTranslation } from 'react-i18next'
 import { FormField } from './FormField/FormField'
+import { useSendMail } from '../../../../services/useSendMail'
 
 // TODO: for UX: save info to localstorage after encryption, include date and check it before applying, if expired remove. on send also remove.
 
@@ -41,6 +42,8 @@ export function Form() {
     },
   })
 
+  const { mutate } = useSendMail()
+
   const handleSubmit = (values: FormValues) => {
     console.log(values)
     const responseValues = {
@@ -48,16 +51,7 @@ export function Form() {
       subject: values.subject,
       message: values.message,
     }
-    fetch('https://us-central1-naomi-store.cloudfunctions.net/sendMail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(responseValues),
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error('Error:', error))
+    mutate(responseValues)
   }
 
   return (

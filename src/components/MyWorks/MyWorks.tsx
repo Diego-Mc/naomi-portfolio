@@ -1,9 +1,9 @@
 import { Box, Image, Title } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
-import Marquee from 'react-marquee-slider'
 import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
 import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
 import db from '../../db'
+import Marquee from 'react-fast-marquee'
 
 export function MyWorks() {
   const { t } = useTranslation('myWorks')
@@ -16,13 +16,7 @@ export function MyWorks() {
     <Box>
       <Title order={2}>{t('title')}</Title>
       {/* button */}
-      <Marquee
-        velocity={30}
-        direction="rtl"
-        onFinish={() => null}
-        onInit={() => null}
-        resetAfterTries={5}
-        scatterRandomly={false}>
+      <Marquee speed={30}>
         {values.map(({ url, alt, title }) => (
           <Image key={title} alt={alt} src={url} maw={200} />
         ))}

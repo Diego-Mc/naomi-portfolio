@@ -1,3 +1,4 @@
+import { EmailInput } from './../../firebase.functions.types'
 import { onRequest } from 'firebase-functions/v2/https'
 import { SendMailOptions, createTransport } from 'nodemailer'
 import { RequestWithBody } from '../types'
@@ -12,16 +13,9 @@ const transporter = createTransport({
   },
 })
 
-type Body = {
-  email: string
-  subject: string
-  message: string
-  phone: string
-}
-
 export const sendMail = onRequest(
   { cors: false }, //TODO: change
-  (req: RequestWithBody<Body>, res) => {
+  (req: RequestWithBody<EmailInput>, res) => {
     const mailOptions: SendMailOptions = {
       from: 'no-reply@naomikrispel.com',
       to: 'naomi@naomikrispel.com',
