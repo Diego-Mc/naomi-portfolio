@@ -48,16 +48,16 @@ export function Form() {
       subject: values.subject,
       message: values.message,
     }
-    // fetch('https://us-central1-naomi-store.cloudfunctions.net/sendMail', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(responseValues),
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => console.log(data))
-    //   .catch((error) => console.error('Error:', error))
+    fetch('https://us-central1-naomi-store.cloudfunctions.net/sendMail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(responseValues),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error('Error:', error))
   }
 
   return (
