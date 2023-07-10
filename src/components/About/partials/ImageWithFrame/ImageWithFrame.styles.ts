@@ -5,14 +5,14 @@ export const useStyles = createStyles((theme) => {
     frameContainer: {
       position: 'relative',
       width: '100%',
-      aspectRatio: 1 / 1,
+      aspectRatio: '83 / 100', //TODO: replace with actual image size
     },
     imageContainer: {
       position: 'absolute',
-      width: '50%',
+      width: '60%',
       height: '80%',
       top: '10%',
-      left: '25%',
+      left: '20%',
     },
     image: {
       position: 'absolute',
