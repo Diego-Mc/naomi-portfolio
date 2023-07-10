@@ -40,7 +40,6 @@ export function Form() {
     <Box component="form" onSubmit={form.onSubmit(handleSubmit)}>
       <FormField form={form} formValue="name" />
       <FormField form={form} formValue="email" />
-      <FormField form={form} formValue="phone" withAsterisk={false} />
       <FormField form={form} formValue="subject" />
       <FormField form={form} formValue="message" type="textarea" />
 
