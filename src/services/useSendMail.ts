@@ -1,8 +1,8 @@
 // hooks/useSendMail.ts
 import { useMutation } from 'react-query'
-import { EmailInput } from '../../firebase.functions.types'
+import { ContactFormValues } from '../../firebase.functions.types'
 
-const sendMail = async (emailInput: EmailInput) => {
+const sendMail = async (emailInput: ContactFormValues) => {
   const response = await fetch(
     'https://us-central1-naomi-store.cloudfunctions.net/sendMail',
     {

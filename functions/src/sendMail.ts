@@ -1,4 +1,4 @@
-import { EmailInput } from './../../firebase.functions.types'
+import { ContactFormValues } from './../../firebase.functions.types'
 import { onRequest } from 'firebase-functions/v2/https'
 import { SendMailOptions, createTransport } from 'nodemailer'
 import { RequestWithBody } from '../types'
@@ -15,12 +15,12 @@ const transporter = createTransport({
 
 export const sendMail = onRequest(
   { cors: false }, //TODO: change
-  (req: RequestWithBody<EmailInput>, res) => {
+  (req: RequestWithBody<ContactFormValues>, res) => {
     const mailOptions: SendMailOptions = {
-      from: 'no-reply@naomikrispel.com',
+      from: 'contact@naomikrispel.com',
       to: 'naomi@naomikrispel.com',
       replyTo: req.body.email,
-      subject: req.body.subject,
+      subject: `${req.body.subject} | ${req.body.name}`,
       text: req.body.message,
     }
 

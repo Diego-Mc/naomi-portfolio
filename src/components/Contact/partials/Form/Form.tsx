@@ -1,28 +1,19 @@
 import { useForm, isEmail, hasLength } from '@mantine/form'
-import { Button, Group, TextInput, Box, Textarea } from '@mantine/core'
-import { isValidPhoneNumber } from '../../../../utils/validation.utils'
+import { Button, Group, Box } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { FormField } from './FormField/FormField'
 import { useSendMail } from '../../../../services/useSendMail'
+import { ContactFormValues } from '../../../../../firebase.functions.types'
 
 // TODO: for UX: save info to localstorage after encryption, include date and check it before applying, if expired remove. on send also remove.
-
-export type FormValues = {
-  name: string
-  email: string
-  phone: string
-  subject: string
-  message: string
-}
 
 export function Form() {
   const { t } = useTranslation('contact')
 
-  const form = useForm<FormValues>({
+  const form = useForm<ContactFormValues>({
     initialValues: {
       name: '',
       email: '',
-      phone: '',
       subject: '',
       message: '',
     },
@@ -30,10 +21,6 @@ export function Form() {
     validate: {
       name: hasLength({ min: 2 }, t('name.error', { min: 2 })),
       email: isEmail(t('email.error')),
-      phone: isValidPhoneNumber(
-        { length: 10 },
-        t('phone.error', { length: 10 })
-      ),
       subject: hasLength(
         { min: 2, max: 20 },
         t('subject.error', { min: 2, max: 20 })
@@ -44,14 +31,9 @@ export function Form() {
 
   const { mutate } = useSendMail()
 
-  const handleSubmit = (values: FormValues) => {
-    console.log(values)
-    const responseValues = {
-      email: values.email,
-      subject: values.subject,
-      message: values.message,
-    }
-    mutate(responseValues)
+  const handleSubmit = (values: ContactFormValues) => {
+    mutate(values)
+    console.log(values) //TODO: replace with logger
   }
 
   return (
