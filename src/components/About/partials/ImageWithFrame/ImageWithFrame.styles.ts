@@ -6,6 +6,7 @@ export const useStyles = createStyles((theme) => {
       position: 'relative',
       width: '100%',
       aspectRatio: '83 / 100', //TODO: replace with actual image size
+      scale: '0.8',
     },
     imageContainer: {
       position: 'absolute',

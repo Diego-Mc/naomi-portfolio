@@ -1,7 +1,7 @@
 import { useForm, isEmail, hasLength } from '@mantine/form'
 import { Button, Group, Box } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
-import { FormField } from './FormField/FormField'
+import { FormField } from '../../../FormField/FormField'
 import { useSendMail } from '../../../../services/useSendMail'
 import { ContactFormValues } from '../../../../../firebase.functions.types'
 
@@ -18,6 +18,7 @@ export function Form() {
       message: '',
     },
 
+    //TODO: replace with zod validation
     validate: {
       name: hasLength({ min: 2 }, t('name.error', { min: 2 })),
       email: isEmail(t('email.error')),
@@ -38,10 +39,10 @@ export function Form() {
 
   return (
     <Box component="form" onSubmit={form.onSubmit(handleSubmit)}>
-      <FormField form={form} formValue="name" />
-      <FormField form={form} formValue="email" />
-      <FormField form={form} formValue="subject" />
-      <FormField form={form} formValue="message" type="textarea" />
+      <FormField form={form} formValue="name" t={t} />
+      <FormField form={form} formValue="email" t={t} />
+      <FormField form={form} formValue="subject" t={t} />
+      <FormField form={form} formValue="message" type="textarea" t={t} />
 
       <Group position="right" mt="md">
         <Button type="submit">Submit</Button>

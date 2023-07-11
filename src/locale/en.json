@@ -21,11 +21,6 @@
       "placeholder": "Your email",
       "error": "Invalid email"
     },
-    "phone": {
-      "label": "Phone",
-      "placeholder": "Your phone",
-      "error": "Phone number must have {{length}} digits"
-    },
     "subject": {
       "label": "Subject",
       "placeholder": "Your subject",
@@ -39,5 +34,12 @@
     "ctaMessage": "Lets work together",
     "ctaDescription": "You can leave a message via the form or just reach me at naomi@naomikrispel.com",
     "ctaEnd": "Lets create something beautiful together."
+  },
+  "newsletter": {
+    "email": {
+      "label": "Email",
+      "placeholder": "Your email",
+      "error": "Invalid email"
+    }
   }
 }

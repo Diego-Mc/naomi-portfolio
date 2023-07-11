@@ -21,11 +21,6 @@
       "placeholder": "האימייל שלך",
       "error": "מייל לא חוקי"
     },
-    "phone": {
-      "label": "טלפון",
-      "placeholder": "מספר הטלפון שלך",
-      "error": "מספר טלפון חייב להיות בעל {{length}} ספרות"
-    },
     "subject": {
       "label": "נושא",
       "placeholder": "נושא",
@@ -39,5 +34,12 @@
     "ctaMessage": "אני רוצה לעבוד איתך!",
     "ctaDescription": "אפשר להשאיר לי הודעה פה או לפנות אליי דרך כתובת המייל naomi@naomikrispel.com",
     "ctaEnd": "מחכה לעבוד איתך וליצור משהו יפה ומשמעותי."
+  },
+  "newsletter": {
+    "email": {
+      "label": "אימייל",
+      "placeholder": "האימייל שלך",
+      "error": "מייל לא חוקי"
+    }
   }
 }

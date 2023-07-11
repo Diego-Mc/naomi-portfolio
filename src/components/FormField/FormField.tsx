@@ -1,19 +1,17 @@
 import { UseFormReturnType } from '@mantine/form'
 import { TextInput, Textarea } from '@mantine/core'
-import { useTranslation } from 'react-i18next'
-import { ContactFormValues } from '../../../../../../firebase.functions.types'
+import { TFunction } from 'i18next'
 
-type Props = {
+type Props<T> = {
   type?: 'input' | 'textarea'
   withAsterisk?: boolean
-  form: UseFormReturnType<ContactFormValues>
-  formValue: keyof ContactFormValues
+  form: UseFormReturnType<T>
+  formValue: Extract<keyof T, string>
+  t: TFunction
 }
 
-export function FormField(props: Props) {
-  const { form, formValue, type = 'input', withAsterisk = true } = props
-
-  const { t } = useTranslation('contact')
+export const FormField = <T,>(props: Props<T>) => {
+  const { form, formValue, type = 'input', withAsterisk = true, t } = props
 
   const fieldProps = {
     label: t(`${formValue}.label`),
