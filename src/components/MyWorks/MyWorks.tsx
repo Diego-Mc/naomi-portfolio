@@ -1,4 +1,4 @@
-import { Box, Image, Title } from '@mantine/core'
+import { Box, Title } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
 import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'

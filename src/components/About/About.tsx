@@ -1,8 +1,7 @@
-import { Box, Flex, Group, Image, Text } from '@mantine/core'
+import { Group, Text } from '@mantine/core'
 import { useStyles } from './About.styles'
 import { ImageWithFrame } from './partials/ImageWithFrame/ImageWithFrame'
 import { useTranslation } from 'react-i18next'
-import { useElementSize } from '@mantine/hooks'
 
 export function About() {
   const { classes } = useStyles()

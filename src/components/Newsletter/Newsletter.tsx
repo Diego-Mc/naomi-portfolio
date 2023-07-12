@@ -9,12 +9,8 @@ export function Newsletter() {
 
   return (
     <Group grow w="100%">
+      <Title order={3}>{t('ctaMessage')}</Title>
       <Form />
-      <Box>
-        <Title order={3}>{t('ctaMessage')}</Title>
-        <Text>{t('ctaDescription')}</Text>
-        <Text>{t('ctaEnd')}</Text>
-      </Box>
     </Group>
   )
 }

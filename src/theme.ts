@@ -15,7 +15,7 @@ export const defaultTheme: MantineThemeOverride = {
       h4: { fontSize: rem(24) },
     },
   },
-  globalStyles: (theme) => ({
+  globalStyles: () => ({
     html: {},
   }),
 }

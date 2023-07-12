@@ -40,6 +40,7 @@
       "label": "Email",
       "placeholder": "Your email",
       "error": "Invalid email"
-    }
+    },
+    "ctaMessage": "Sign up to newsletter"
   }
 }

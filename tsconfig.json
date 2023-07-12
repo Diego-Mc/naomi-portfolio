@@ -29,6 +29,6 @@
     "types.d.ts",
     "firebase.functions.types.ts"
   ],
-  "exclude": ["functions"],
+  "exclude": ["functions", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

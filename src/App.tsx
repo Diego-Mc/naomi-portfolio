@@ -1,4 +1,4 @@
-import { Grid, MantineProvider, createEmotionCache } from '@mantine/core'
+import { MantineProvider, Stack, createEmotionCache } from '@mantine/core'
 import { defaultTheme } from './theme'
 import { Hero } from './components/Hero/Hero'
 import stylisRTLPlugin from 'stylis-plugin-rtl'
@@ -19,13 +19,13 @@ export default function App() {
       withNormalizeCSS
       theme={defaultTheme}
       emotionCache={rtlCache}>
-      <Grid dir="rtl">
+      <Stack dir="rtl">
         <Hero />
         <MyWorks />
         <About />
         <Contact />
         <Newsletter />
-      </Grid>
+      </Stack>
     </MantineProvider>
   )
 }
