@@ -32,11 +32,7 @@ export function Form() {
 
   return (
     <Box component="form" onSubmit={form.onSubmit(handleSubmit)}>
-      <FormField form={form} formValue="email" t={t} />
-
-      <Group position="right" mt="md">
-        <Button type="submit">Submit</Button>
-      </Group>
+      <FormField form={form} formValue="email" t={t} withLabel={false} />
     </Box>
   )
 }

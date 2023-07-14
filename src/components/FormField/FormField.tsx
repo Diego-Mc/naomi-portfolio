@@ -5,16 +5,24 @@ import { TFunction } from 'i18next'
 type Props<T> = {
   type?: 'input' | 'textarea'
   withAsterisk?: boolean
+  withLabel?: boolean
   form: UseFormReturnType<T>
   formValue: Extract<keyof T, string>
   t: TFunction
 }
 
 export const FormField = <T,>(props: Props<T>) => {
-  const { form, formValue, type = 'input', withAsterisk = true, t } = props
+  const {
+    form,
+    formValue,
+    type = 'input',
+    withAsterisk = true,
+    t,
+    withLabel = true,
+  } = props
 
   const fieldProps = {
-    label: t(`${formValue}.label`),
+    label: withLabel ? t(`${formValue}.label`) : null,
     placeholder: t(`${formValue}.placeholder`),
     withAsterisk,
     mt: 'md',

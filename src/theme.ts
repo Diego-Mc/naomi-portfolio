@@ -20,3 +20,5 @@ export const defaultTheme: MantineThemeOverride = {
     html: {},
   }),
 }
+
+export const MARGIN_X = 80

@@ -4,15 +4,16 @@ import { useStyles } from './ImageWithFrame.styles'
 type Props = {
   frameSrc: string
   imageSrc: string
+  maw?: string | number
 }
 
 export function ImageWithFrame(props: Props) {
-  const { frameSrc, imageSrc } = props
+  const { frameSrc, imageSrc, maw } = props
 
   const { classes } = useStyles()
 
   return (
-    <Box className={classes.frameContainer}>
+    <Box className={classes.frameContainer} maw={maw}>
       <Box className={classes.imageContainer}>
         <img className={classes.image} src={imageSrc} />
       </Box>

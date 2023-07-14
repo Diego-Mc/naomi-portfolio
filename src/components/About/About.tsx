@@ -1,7 +1,8 @@
-import { Box, Group, Text } from '@mantine/core'
+import { Center, Grid, Stack, Text } from '@mantine/core'
 import { useStyles } from './About.styles'
 import { ImageWithFrame } from './partials/ImageWithFrame/ImageWithFrame'
 import { useTranslation } from 'react-i18next'
+import { MARGIN_X } from '../../theme'
 
 export function About() {
   const { classes } = useStyles()
@@ -9,18 +10,27 @@ export function About() {
   const { t } = useTranslation('about')
 
   return (
-    <Group noWrap>
-      <Box sx={{ flexBasis: 560, flexShrink: 1 }}>
-        <ImageWithFrame
-          frameSrc="frame.png"
-          imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
-        />
-      </Box>
-      <Box sx={{ flexGrow: 1, flexBasis: 0 }}>
-        <Text fz="xl" fw={500} className={classes.text}>
-          {t('text')}
-        </Text>
-      </Box>
-    </Group>
+    <Grid columns={12} gutter={24} mx={MARGIN_X}>
+      <Grid.Col span={6}>
+        <Center>
+          <ImageWithFrame
+            maw={500}
+            frameSrc="frame.png"
+            imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
+          />
+        </Center>
+      </Grid.Col>
+      <Grid.Col span={6}>
+        <Center h="100%">
+          <Stack maw={500} className={classes.text} spacing={24}>
+            <Text fw={700}>{t('text.p1')}</Text>
+            <Text>{t('text.p2')}</Text>
+            <Text>{t('text.p3')}</Text>
+            <Text>{t('text.p4')}</Text>
+            <Text>{t('text.p5')}</Text>
+          </Stack>
+        </Center>
+      </Grid.Col>
+    </Grid>
   )
 }

@@ -1,4 +1,4 @@
-import { Box, Title } from '@mantine/core'
+import { Box, Stack, Title } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
 import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
@@ -14,15 +14,11 @@ export function MyWorks() {
   if (!values) return null
 
   return (
-    <Box sx={{ width: '100%' }}>
-      {/* <Title order={3} ta="center" my={20}>
-        {t('title')}
-      </Title> */}
+    <Stack>
       <Headline
         title={t('title')}
         cta={{ text: t('cta'), href: 'www.google.com' }}
       />
-      {/* button */}
       <Marquee startOnScreen>
         {values.map(({ url, alt, title }) => (
           <img
@@ -33,6 +29,6 @@ export function MyWorks() {
           />
         ))}
       </Marquee>
-    </Box>
+    </Stack>
   )
 }
