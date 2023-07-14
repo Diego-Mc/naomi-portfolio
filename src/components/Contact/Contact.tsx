@@ -1,4 +1,4 @@
-import { Box, Group, Text, Title } from '@mantine/core'
+import { Box, Center, Group, Stack, Text, Title } from '@mantine/core'
 import { Form } from './partials/Form/Form'
 import { useTranslation } from 'react-i18next'
 
@@ -8,12 +8,16 @@ export function Contact() {
   const { t } = useTranslation('contact')
 
   return (
-    <Group grow w="100%">
-      <Form />
-      <Box>
-        <Title order={3}>{t('ctaMessage')}</Title>
-        <Text>{t('ctaDescription')}</Text>
-        <Text>{t('ctaEnd')}</Text>
+    <Group w="100%">
+      <Center sx={{ flexGrow: 1 }}>
+        <Stack align="center">
+          <Title order={3}>{t('ctaMessage')}</Title>
+          <Text mb={20}>{t('ctaDescription')}</Text>
+          <Text>{t('ctaEnd')}</Text>
+        </Stack>
+      </Center>
+      <Box mx={50} sx={{ flexBasis: 560, flexShrink: 1 }}>
+        <Form />
       </Box>
     </Group>
   )

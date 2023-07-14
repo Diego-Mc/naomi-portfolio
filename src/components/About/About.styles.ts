@@ -6,8 +6,5 @@ export const useStyles = createStyles(() => {
       whiteSpace: 'break-spaces',
       paddingBlock: rem(100),
     },
-    container: {
-      marginInlineEnd: rem(50),
-    },
   }
 })

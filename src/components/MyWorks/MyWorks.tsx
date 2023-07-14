@@ -4,6 +4,7 @@ import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
 import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
 import db from '../../db'
 import { Marquee } from 'dynamic-marquee-react'
+import { Headline } from '../Headline/Headline'
 
 export function MyWorks() {
   const { t } = useTranslation('myWorks')
@@ -14,11 +15,22 @@ export function MyWorks() {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Title order={2}>{t('title')}</Title>
+      {/* <Title order={3} ta="center" my={20}>
+        {t('title')}
+      </Title> */}
+      <Headline
+        title={t('title')}
+        cta={{ text: t('cta'), href: 'www.google.com' }}
+      />
       {/* button */}
       <Marquee startOnScreen>
         {values.map(({ url, alt, title }) => (
-          <img key={title} alt={alt} src={url} width={400} />
+          <img
+            key={title}
+            alt={alt}
+            src={url}
+            style={{ maxWidth: 400, marginInline: 5 }}
+          />
         ))}
       </Marquee>
     </Box>
