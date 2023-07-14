@@ -8,6 +8,7 @@ import { Contact } from './components/Contact/Contact'
 import { Newsletter } from './components/Newsletter/Newsletter'
 import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
+import { ArtProcess } from './components/ArtProcess/ArtProcess'
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -27,6 +28,7 @@ export default function App() {
         <MyWorks />
         <About />
         <Contact />
+        <ArtProcess />
         <Newsletter />
         <Footer />
       </Stack>
