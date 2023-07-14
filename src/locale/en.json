@@ -1,4 +1,11 @@
 {
+  "header": {
+    "myWorks": "My works",
+    "about": "About",
+    "logoAlt": "Logo",
+    "contact": "Contact",
+    "process": "Process"
+  },
   "hero": {
     "fullName": "Naomi Krispel",
     "profession": "Digital Illustrator · Cartoonist"

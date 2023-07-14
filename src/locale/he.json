@@ -1,4 +1,11 @@
 {
+  "header": {
+    "myWorks": "העבודות שלי",
+    "about": "מי אני",
+    "logoAlt": "לוגו",
+    "contact": "צרו קשר",
+    "process": "תהליך היצירה"
+  },
   "hero": {
     "fullName": "נעמי קריספל",
     "profession": "מאיירת דיגיטלית · קומיקסאית"

@@ -6,6 +6,7 @@ import { MyWorks } from './components/MyWorks/MyWorks'
 import { About } from './components/About/About'
 import { Contact } from './components/Contact/Contact'
 import { Newsletter } from './components/Newsletter/Newsletter'
+import { Header } from './components/Header/Header'
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -19,6 +20,7 @@ export default function App() {
       withNormalizeCSS
       theme={defaultTheme}
       emotionCache={rtlCache}>
+      <Header />
       <Stack dir="rtl">
         <Hero />
         <MyWorks />
