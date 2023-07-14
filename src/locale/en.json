@@ -1,8 +1,12 @@
 {
+  "meta": {
+    "logo": {
+      "alt": "Logo"
+    }
+  },
   "header": {
     "myWorks": "My works",
     "about": "About",
-    "logoAlt": "Logo",
     "contact": "Contact",
     "process": "Process"
   },
@@ -49,5 +53,8 @@
       "error": "Invalid email"
     },
     "ctaMessage": "Sign up to newsletter"
+  },
+  "footer": {
+    "copyText": "Naomi Krispel · copyright 2023"
   }
 }
