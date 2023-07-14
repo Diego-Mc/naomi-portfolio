@@ -45,7 +45,7 @@ export function Form() {
       <FormField form={form} formValue="message" type="textarea" t={t} />
 
       <Group position="right" mt="md">
-        <Button type="submit">Submit</Button>
+        <Button type="submit">{t('submit')}</Button>
       </Group>
     </Box>
   )

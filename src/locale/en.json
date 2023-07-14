@@ -44,7 +44,8 @@
     },
     "ctaMessage": "Lets work together",
     "ctaDescription": "You can leave a message via the form or just reach me at naomi@naomikrispel.com",
-    "ctaEnd": "Lets create something beautiful together."
+    "ctaEnd": "Lets create something beautiful together.",
+    "submit": "Submit"
   },
   "newsletter": {
     "email": {

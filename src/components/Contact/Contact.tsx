@@ -17,7 +17,7 @@ export function Contact() {
       </Grid.Col>
       <Grid.Col span={6} offset={1}>
         <Center h="100%">
-          <Stack align="center" spacing={64}>
+          <Stack align="center" spacing={64} ta="center">
             <Title order={3}>{t('ctaMessage')}</Title>
             <Text>{t('ctaDescription')}</Text>
             <Text>{t('ctaEnd')}</Text>

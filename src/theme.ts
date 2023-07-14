@@ -6,6 +6,29 @@ export const defaultTheme: MantineThemeOverride = {
   black: '#4E3822',
   white: '#FCF2EC',
   dir: 'rtl',
+  components: {
+    TextInput: {
+      styles: (theme) => ({
+        label: {
+          color: theme.colors.brand[5],
+        },
+      }),
+    },
+    Teaxtarea: {
+      styles: (theme) => ({
+        label: {
+          color: theme.colors.brand[5],
+        },
+      }),
+    },
+    NumberInput: {
+      styles: (theme) => ({
+        label: {
+          color: theme.colors.brand[5],
+        },
+      }),
+    },
+  },
   colors: {
     brand: [
       '#FEFEFE', //white
@@ -13,8 +36,8 @@ export const defaultTheme: MantineThemeOverride = {
       '#FCF2EC', //bg
       '#BFA18E', //dark bg
       '#323232', //dark gray
-      '#000000', //black
       '#4E3822', //brown
+      '#000000', //black
       '#278B72', //green
       '#E65B69', //red
       '#C50E82', //to set
