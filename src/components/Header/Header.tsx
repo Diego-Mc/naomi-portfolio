@@ -3,6 +3,7 @@ import { useHeadroom } from '@mantine/hooks'
 import { useTranslation } from 'react-i18next'
 import { HEADER_HEIGHT } from '../../theme'
 import { useStyles } from './Header.styles'
+import { ReactComponent as Logo } from '../../assets/naomi-logo.svg'
 
 export function Header() {
   const { t } = useTranslation('header')
@@ -20,7 +21,7 @@ export function Header() {
             h={HEADER_HEIGHT}>
             <Text ta="center">{t('myWorks')}</Text>
             <Text ta="center">{t('about')}</Text>
-            <Text ta="center">LOGO</Text>
+            <Logo height={40} />
             <Text ta="center">{t('contact')}</Text>
             <Text ta="center">{t('process')}</Text>
           </Group>

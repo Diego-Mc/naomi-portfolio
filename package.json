@@ -29,6 +29,7 @@
     "react-query": "^3.39.3",
     "stylis": "^4.3.0",
     "stylis-plugin-rtl": "^2.1.1",
+    "vite-plugin-svgr": "^3.2.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {

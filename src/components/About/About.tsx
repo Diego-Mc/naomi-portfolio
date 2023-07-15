@@ -18,7 +18,7 @@ export function About() {
           <Center>
             <ImageWithFrame
               maw={500}
-              frameSrc="frame.png"
+              frameSrc="frame.svg"
               imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
             />
           </Center>
