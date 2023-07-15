@@ -9,6 +9,7 @@ import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
 import { ArtProcess } from './components/ArtProcess/ArtProcess'
 import { useScrollIntoView } from '@mantine/hooks'
+import { CustomFonts } from './components/CustomFonts/CustomFonts'
 
 const rtlCache = createEmotionCache({
   key: 'mantine-rtl',
@@ -28,6 +29,7 @@ export default function App() {
       withNormalizeCSS
       theme={defaultTheme}
       emotionCache={rtlCache}>
+      <CustomFonts />
       <Header
         scrollers={{
           hero: heroNavOptions.scrollIntoView,

@@ -22,7 +22,9 @@ export function Header(props: Props) {
   const { classes } = useStyles()
 
   return (
-    <Affix position={{ top: 0, left: 0, right: 0 }}>
+    <Affix
+      position={{ top: 0, left: 0, right: 0 }}
+      display={{ md: 'initial', base: 'none' }}>
       <Transition transition="slide-down" mounted={isPinned}>
         {(transitionStyles) => (
           <Group

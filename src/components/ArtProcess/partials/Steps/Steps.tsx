@@ -65,7 +65,7 @@ export function Steps() {
 // 4. fix images for mobile/smaller screens ✅
 // 5. add links  ✅
 // 6. fix hero ✅
-// 7. add burger menu
-// 8. add fonts
-// 9. add transitions
-// 10. add notifications for success/error
+// 7. add burger menu - //TODO
+// 8. add fonts  ✅
+// 9. add transitions //TODO
+// 10. add notifications for success/error //TODO

@@ -1,4 +1,4 @@
-import { BackgroundImage, Box, Center, Image, Title } from '@mantine/core'
+import { BackgroundImage, Box, Center, Title } from '@mantine/core'
 import { useStyles } from './Hero.styles'
 import { useTranslation } from 'react-i18next'
 
@@ -13,7 +13,7 @@ export function Hero() {
         {/* TODO: find a way to create this image so we will have translations - if it's an optimized way, another option is to recreate the effect with javascript */}
         {/* <BackgroundImage src={'test.png'} className={classes.titlesImage}> */}
         <Center className={classes.titlesContainer}>
-          <Box>
+          <Box mt={{ base: '-30vh', md: 0 }}>
             <Title order={4} className={classes.subTitle} px={6}>
               {t('profession')}
             </Title>
