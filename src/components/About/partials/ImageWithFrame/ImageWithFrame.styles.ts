@@ -14,6 +14,9 @@ export const useStyles = createStyles(() => {
       height: '80%',
       top: '10%',
       left: '20%',
+      '-webkit-mask-image': 'url(cut-01.svg)',
+      '-webkit-mask-position': 'center',
+      '-webkit-mask-size': 'auto 126%',
     },
     image: {
       position: 'absolute',
