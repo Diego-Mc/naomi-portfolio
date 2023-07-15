@@ -14,7 +14,7 @@ export function About() {
     <Box py={64}>
       <Headline title={t('title')} mx={MARGIN_X} />
       <Grid columns={12} gutter={24} mx={MARGIN_X}>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} lg={6}>
           <Center>
             <ImageWithFrame
               maw={500}
@@ -23,7 +23,7 @@ export function About() {
             />
           </Center>
         </Grid.Col>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} lg={6}>
           <Center h="100%">
             <Stack maw={500} className={classes.text} spacing={24}>
               <Text fw={700}>{t('text.p1')}</Text>

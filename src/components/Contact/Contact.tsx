@@ -13,12 +13,7 @@ export function Contact() {
     <Box sx={{ backgroundColor: 'white' }} py={64}>
       <Headline title={t('title')} mx={MARGIN_X} />
       <Grid columns={12} px={MARGIN_X} mt={32}>
-        <Grid.Col span={5}>
-          <Box>
-            <Form />
-          </Box>
-        </Grid.Col>
-        <Grid.Col span={6} offset={1}>
+        <Grid.Col span={12} lg={6} offsetLg={1}>
           <Center h="100%">
             <Stack align="center" spacing={64} ta="center">
               <Title order={3}>{t('ctaMessage')}</Title>
@@ -26,6 +21,11 @@ export function Contact() {
               <Text>{t('ctaEnd')}</Text>
             </Stack>
           </Center>
+        </Grid.Col>
+        <Grid.Col span={12} lg={5} orderLg={-1}>
+          <Box>
+            <Form />
+          </Box>
         </Grid.Col>
       </Grid>
     </Box>

@@ -13,7 +13,7 @@ export function Newsletter() {
 
   return (
     <Grid columns={12} px={MARGIN_X} className={classes.container} py={32}>
-      <Grid.Col span={5}>
+      <Grid.Col span={12} lg={5} orderLg={-1}>
         <Stack h="100%">
           <Title order={3} ta="center">
             {t('ctaMessage')}
@@ -23,7 +23,7 @@ export function Newsletter() {
           </Title>
         </Stack>
       </Grid.Col>
-      <Grid.Col span={6} offset={1}>
+      <Grid.Col span={12} lg={6} offsetLg={1}>
         <Form />
       </Grid.Col>
     </Grid>
