@@ -60,7 +60,7 @@ export function Steps() {
 
 // TODO:
 // 1. fix CORS issues in form ✅
-// 2. add reset on submit to form
+// 2. add reset on submit to form ✅
 // 3. fix headers for mobile
 // 4. fix images for mobile/smaller screens
 // 5. add links
@@ -68,3 +68,4 @@ export function Steps() {
 // 7. add burger menu
 // 8. add fonts
 // 9. add transitions
+// 10. add notifications for success/error

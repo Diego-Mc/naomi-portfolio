@@ -35,6 +35,7 @@ export function Form() {
   const handleSubmit = (values: ContactFormValues) => {
     mutate(values)
     console.log(values) //TODO: replace with logger
+    form.reset() //TODO: reset only if successful (& add notification)
   }
 
   return (
