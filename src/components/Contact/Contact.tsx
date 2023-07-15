@@ -10,7 +10,7 @@ export function Contact() {
   const { t } = useTranslation('contact')
 
   return (
-    <Box>
+    <Box sx={{ backgroundColor: 'white' }} py={64}>
       <Headline title={t('title')} mx={MARGIN_X} />
       <Grid columns={12} px={MARGIN_X}>
         <Grid.Col span={5}>

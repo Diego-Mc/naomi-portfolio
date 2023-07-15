@@ -26,6 +26,7 @@ export const FormField = <T,>(props: Props<T>) => {
     placeholder: t(`${formValue}.placeholder`),
     withAsterisk,
     mt: 'md',
+    styles: { input: { backgroundColor: 'inherit' } },
     ...form.getInputProps(`${formValue}`),
   }
 
