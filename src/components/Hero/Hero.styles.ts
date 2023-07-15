@@ -1,10 +1,16 @@
 import { createStyles } from '@mantine/core'
 
-export const useStyles = createStyles(() => {
+export const useStyles = createStyles((theme) => {
   return {
-    mainTitle: {},
+    mainTitle: {
+      [theme.fn.smallerThan('md')]: {
+        fontSize: theme.headings.sizes.h2.fontSize,
+      },
+    },
     subTitle: {
-      marginBottom: '-20px',
+      [theme.fn.smallerThan('md')]: {
+        fontSize: theme.headings.sizes.h5.fontSize,
+      },
     },
     titlesContainer: {
       height: '100vh',

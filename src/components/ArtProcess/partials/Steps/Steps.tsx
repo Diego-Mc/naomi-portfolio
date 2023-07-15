@@ -7,7 +7,7 @@ export function Steps() {
 
   return (
     <Grid columns={12}>
-      <Grid.Col span={2} md={12}>
+      <Grid.Col span={1} sm={2} md={12}>
         <Flex
           h="100%"
           align="center"
@@ -28,7 +28,7 @@ export function Steps() {
           <Box sx={{ flexGrow: 0.5, border: '1px dashed transparent' }} />
         </Flex>
       </Grid.Col>
-      <Grid.Col span={10} md={12}>
+      <Grid.Col span={11} sm={10} md={12}>
         <Flex
           align="center"
           justify="space-around"
@@ -61,8 +61,8 @@ export function Steps() {
 // TODO:
 // 1. fix CORS issues in form ✅
 // 2. add reset on submit to form ✅
-// 3. fix headers for mobile
-// 4. fix images for mobile/smaller screens
+// 3. fix headers for mobile ✅
+// 4. fix images for mobile/smaller screens ✅
 // 5. add links
 // 6. fix hero
 // 7. add burger menu

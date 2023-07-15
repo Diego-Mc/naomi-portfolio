@@ -1,6 +1,6 @@
 import { Flex, Group, Text } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
-import { MARGIN_X } from '../../theme'
+import { MARGINS_X } from '../../theme'
 import { IconBrandInstagram } from '@tabler/icons-react'
 import { ReactComponent as Logo } from '../../assets/naomi-logo.svg'
 
@@ -8,7 +8,7 @@ export function Footer() {
   const { t } = useTranslation('footer')
 
   return (
-    <Group grow sx={{ backgroundColor: 'white' }} py={16} px={MARGIN_X}>
+    <Group grow sx={{ backgroundColor: 'white' }} py={16} px={MARGINS_X}>
       <Text ta="start" fz="xs">
         {t('copyText')}
       </Text>

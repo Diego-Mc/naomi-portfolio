@@ -1,4 +1,11 @@
-import { Group, Stack, Title, useMantineTheme } from '@mantine/core'
+import {
+  Group,
+  SpacingValue,
+  Stack,
+  SystemProp,
+  Title,
+  useMantineTheme,
+} from '@mantine/core'
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react'
 
 type Props = {
@@ -7,7 +14,7 @@ type Props = {
     text: string
     href: string
   }
-  mx?: string | number
+  mx?: SystemProp<SpacingValue>
 }
 
 export function Headline(props: Props) {

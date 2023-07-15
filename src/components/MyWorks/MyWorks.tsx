@@ -5,7 +5,7 @@ import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
 import db from '../../db'
 import { Marquee } from 'dynamic-marquee-react'
 import { Headline } from '../Headline/Headline'
-import { MARGIN_X } from '../../theme'
+import { MARGINS_X } from '../../theme'
 
 export function MyWorks() {
   const { t } = useTranslation('myWorks')
@@ -18,7 +18,7 @@ export function MyWorks() {
     <Stack py={64} spacing={32} sx={{ backgroundColor: 'white' }}>
       <Headline
         title={t('title')}
-        mx={MARGIN_X}
+        mx={MARGINS_X}
         cta={{ text: t('cta'), href: 'www.google.com' }}
       />
       <Marquee startOnScreen>

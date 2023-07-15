@@ -14,7 +14,7 @@ export function Hero() {
         {/* <BackgroundImage src={'test.png'} className={classes.titlesImage}> */}
         <Center className={classes.titlesContainer}>
           <Box>
-            <Title order={4} className={classes.subTitle} mb={0} px={6}>
+            <Title order={4} className={classes.subTitle} px={6}>
               {t('profession')}
             </Title>
             <Title className={classes.mainTitle} order={1}>

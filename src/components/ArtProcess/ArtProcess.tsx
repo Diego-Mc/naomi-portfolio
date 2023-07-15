@@ -1,6 +1,6 @@
 import { Box, Stack, ThemeIcon, Title } from '@mantine/core'
 import { Headline } from '../Headline/Headline'
-import { MARGIN_X } from '../../theme'
+import { MARGINS_X } from '../../theme'
 import { Steps } from './partials/Steps/Steps'
 import { useTranslation } from 'react-i18next'
 
@@ -9,8 +9,8 @@ export function ArtProcess() {
 
   return (
     <Box py={64}>
-      <Headline title={t('title')} mx={MARGIN_X} />
-      <Stack px={MARGIN_X} spacing={64} mt={64} mb={64}>
+      <Headline title={t('title')} mx={MARGINS_X} />
+      <Stack px={MARGINS_X} spacing={64} mt={64} mb={64}>
         <Steps />
         <Stack sx={{ alignSelf: 'center' }} align="center" spacing={16}>
           <Stack spacing={4} align="center">

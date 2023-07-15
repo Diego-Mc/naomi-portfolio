@@ -60,5 +60,8 @@ export const defaultTheme: MantineThemeOverride = {
   }),
 }
 
-export const MARGIN_X = 80
+export const MARGINS_X = {
+  md: 82,
+  base: 24,
+}
 export const HEADER_HEIGHT = 80

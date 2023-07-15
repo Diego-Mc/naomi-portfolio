@@ -2,7 +2,7 @@ import { Box, Center, Grid, Stack, Text } from '@mantine/core'
 import { useStyles } from './About.styles'
 import { ImagesWithFrame } from './partials/ImageWithFrame/ImageWithFrame'
 import { useTranslation } from 'react-i18next'
-import { MARGIN_X } from '../../theme'
+import { MARGINS_X } from '../../theme'
 import { Headline } from '../Headline/Headline'
 
 const images = [
@@ -17,16 +17,20 @@ export function About() {
 
   return (
     <Box py={64}>
-      <Headline title={t('title')} mx={MARGIN_X} />
-      <Grid columns={12} gutter={24} mx={MARGIN_X}>
-        <Grid.Col span={12} lg={6}>
+      <Headline title={t('title')} mx={MARGINS_X} />
+      <Grid columns={12} gutter={36} mx={MARGINS_X} mt={24}>
+        <Grid.Col span={12} md={5}>
           <Center>
             <ImagesWithFrame maw={500} images={images} />
           </Center>
         </Grid.Col>
-        <Grid.Col span={12} lg={6}>
+        <Grid.Col span={12} md={7}>
           <Center h="100%">
-            <Stack maw={500} className={classes.text} spacing={24}>
+            <Stack
+              maw={500}
+              className={classes.text}
+              spacing={24}
+              ta={{ md: 'initial', base: 'center' }}>
               <Text fw={700}>{t('text.p1')}</Text>
               <Text>{t('text.p2')}</Text>
               <Text>{t('text.p3')}</Text>

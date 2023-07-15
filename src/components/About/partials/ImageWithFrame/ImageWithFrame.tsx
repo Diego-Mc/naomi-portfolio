@@ -1,4 +1,4 @@
-import { Box } from '@mantine/core'
+import { Box, MediaQuery } from '@mantine/core'
 import { useStyles } from './ImageWithFrame.styles'
 import ImageSwitcher from '../../../ImageSwitcher/ImageSwitcher'
 
@@ -13,15 +13,17 @@ export function ImagesWithFrame(props: Props) {
   const { classes } = useStyles()
 
   return (
-    <Box className={classes.frameContainer} maw={maw}>
-      <Box className={classes.imageContainer}>
-        <ImageSwitcher
-          images={images}
-          interval={3000}
-          className={classes.image}
-        />
+    <MediaQuery smallerThan="lg" styles={{ scale: '0.9' }}>
+      <Box className={classes.frameContainer} maw={maw}>
+        <Box className={classes.imageContainer}>
+          <ImageSwitcher
+            images={images}
+            interval={3000}
+            className={classes.image}
+          />
+        </Box>
+        <img className={classes.frame} src={'frame.svg'} />
       </Box>
-      <img className={classes.frame} src={'frame.svg'} />
-    </Box>
+    </MediaQuery>
   )
 }
