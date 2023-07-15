@@ -11,7 +11,7 @@ export function About() {
   const { t } = useTranslation('about')
 
   return (
-    <Box>
+    <Box py={64}>
       <Headline title={t('title')} mx={MARGIN_X} />
       <Grid columns={12} gutter={24} mx={MARGIN_X}>
         <Grid.Col span={6}>

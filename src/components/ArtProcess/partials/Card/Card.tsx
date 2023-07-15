@@ -13,10 +13,10 @@ export function Card(props: Props) {
   return (
     <Stack align="center">
       <IconPhone />
-      <Title maw={240} ta="center" order={4}>
+      <Title maw={200} ta="center" order={4}>
         {title}
       </Title>
-      <Text maw={240} ta="center">
+      <Text maw={200} ta="center">
         {description}
       </Text>
     </Stack>

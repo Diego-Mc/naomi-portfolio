@@ -12,7 +12,7 @@ export function Newsletter() {
   const { classes } = useStyles()
 
   return (
-    <Grid columns={12} px={MARGIN_X} className={classes.container} py={24}>
+    <Grid columns={12} px={MARGIN_X} className={classes.container} py={32}>
       <Grid.Col span={5}>
         <Stack h="100%">
           <Title order={3} ta="center">

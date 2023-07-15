@@ -10,7 +10,7 @@ export function ArtProcess() {
   return (
     <Box py={64}>
       <Headline title={t('title')} mx={MARGIN_X} />
-      <Stack px={MARGIN_X} spacing={64} mt={64}>
+      <Stack px={MARGIN_X} spacing={64} mt={64} mb={64}>
         <Steps />
         <Stack sx={{ alignSelf: 'center' }} align="center" spacing={16}>
           <Stack spacing={4} align="center">

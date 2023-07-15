@@ -14,9 +14,9 @@ export function Hero() {
         {/* <BackgroundImage src={'test.png'} className={classes.titlesImage}> */}
         <Center className={classes.titlesContainer}>
           <Box>
-            <Text className={classes.subTitle} size={'xl'} mb={0}>
+            <Title order={4} className={classes.subTitle} mb={0} px={6}>
               {t('profession')}
-            </Text>
+            </Title>
             <Title className={classes.mainTitle} order={1}>
               {t('fullName')}
             </Title>

@@ -15,7 +15,7 @@ export function MyWorks() {
   if (!values) return null
 
   return (
-    <Stack>
+    <Stack py={64} spacing={32} sx={{ backgroundColor: 'white' }}>
       <Headline
         title={t('title')}
         mx={MARGIN_X}
