@@ -6,7 +6,7 @@ export function Steps() {
   const { t } = useTranslation('artProcess')
 
   return (
-    <Stack>
+    <Stack spacing={36}>
       <Flex align="center" wrap="nowrap">
         <Box sx={{ flexGrow: 0.5, border: '1px dashed transparent' }} />
         <Box sx={{ flexBasis: 26, flexShrink: 0 }}>
