@@ -37,17 +37,20 @@ export function Steps() {
           <Card
             title={t('cards.contact.title')}
             description={t('cards.contact.description')}
-            imgUrl=""
+            imageUrl="msg.svg"
+            backgroundUrl="msg_bg.svg"
           />
           <Card
             title={t('cards.sketches.title')}
             description={t('cards.sketches.description')}
-            imgUrl=""
+            imageUrl="pencil.svg"
+            backgroundUrl="pencil_bg.svg"
           />
           <Card
             title={t('cards.fixes.title')}
             description={t('cards.fixes.description')}
-            imgUrl=""
+            imageUrl="smile.svg"
+            backgroundUrl="smile_bg.svg"
           />
         </Flex>
       </Grid.Col>

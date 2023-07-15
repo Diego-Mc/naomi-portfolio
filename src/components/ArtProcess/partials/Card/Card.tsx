@@ -1,20 +1,31 @@
-import { Box, Center, Grid, Stack, Text, Title } from '@mantine/core'
+import {
+  BackgroundImage,
+  Box,
+  Center,
+  Grid,
+  Stack,
+  Text,
+  Title,
+} from '@mantine/core'
 import { IconPhone } from '@tabler/icons-react'
 
 type Props = {
   title: string
   description: string
-  imgUrl: string
+  imageUrl: string
+  backgroundUrl: string
 }
 
 export function Card(props: Props) {
-  const { title, description, imgUrl } = props
+  const { title, description, imageUrl, backgroundUrl } = props
 
   return (
     <Grid align="center" columns={12} justify="center" py={36}>
       <Grid.Col span={4} md={12}>
-        <Center>
-          <IconPhone />
+        <Center px={16} sx={{ transform: 'scale(0.8)' }}>
+          <BackgroundImage src={backgroundUrl}>
+            <img src={imageUrl} />
+          </BackgroundImage>
         </Center>
       </Grid.Col>
       <Grid.Col
