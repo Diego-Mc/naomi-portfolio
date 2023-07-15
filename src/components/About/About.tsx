@@ -1,9 +1,14 @@
 import { Box, Center, Grid, Stack, Text } from '@mantine/core'
 import { useStyles } from './About.styles'
-import { ImageWithFrame } from './partials/ImageWithFrame/ImageWithFrame'
+import { ImagesWithFrame } from './partials/ImageWithFrame/ImageWithFrame'
 import { useTranslation } from 'react-i18next'
 import { MARGIN_X } from '../../theme'
 import { Headline } from '../Headline/Headline'
+
+const images = [
+  'https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg',
+  'https://res.cloudinary.com/wewix/image/upload/v1689437728/JPEG_image-FAD10B1D4CB2-1_hat7be.jpg',
+]
 
 export function About() {
   const { classes } = useStyles()
@@ -16,11 +21,7 @@ export function About() {
       <Grid columns={12} gutter={24} mx={MARGIN_X}>
         <Grid.Col span={12} lg={6}>
           <Center>
-            <ImageWithFrame
-              maw={500}
-              frameSrc="frame.svg"
-              imageSrc="https://res.cloudinary.com/wewix/image/upload/v1688924153/JPEG_image-35CE9FE57F8B-1_vakwli.jpg"
-            />
+            <ImagesWithFrame maw={500} images={images} />
           </Center>
         </Grid.Col>
         <Grid.Col span={12} lg={6}>

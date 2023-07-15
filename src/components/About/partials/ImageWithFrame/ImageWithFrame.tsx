@@ -1,23 +1,27 @@
 import { Box } from '@mantine/core'
 import { useStyles } from './ImageWithFrame.styles'
+import ImageSwitcher from '../../../ImageSwitcher/ImageSwitcher'
 
 type Props = {
-  frameSrc: string
-  imageSrc: string
+  images: string[]
   maw?: string | number
 }
 
-export function ImageWithFrame(props: Props) {
-  const { frameSrc, imageSrc, maw } = props
+export function ImagesWithFrame(props: Props) {
+  const { images, maw } = props
 
   const { classes } = useStyles()
 
   return (
     <Box className={classes.frameContainer} maw={maw}>
       <Box className={classes.imageContainer}>
-        <img className={classes.image} src={imageSrc} />
+        <ImageSwitcher
+          images={images}
+          interval={3000}
+          className={classes.image}
+        />
       </Box>
-      <img className={classes.frame} src={frameSrc} />
+      <img className={classes.frame} src={'frame.svg'} />
     </Box>
   )
 }
