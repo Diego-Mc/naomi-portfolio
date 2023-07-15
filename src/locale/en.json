@@ -47,6 +47,24 @@
     "ctaEnd": "Lets create something beautiful together.",
     "submit": "Submit"
   },
+  "artProcess": {
+    "title": "Art Process",
+    "cards": {
+      "contact": {
+        "title": "Contact",
+        "description": "Reaching out to you"
+      },
+      "sketches": {
+        "title": "Sketching",
+        "description": "Sketching out ideas"
+      },
+      "fixes": {
+        "title": "Fixes",
+        "description": "Fixing stuff"
+      }
+    },
+    "lastStep": "It's here"
+  },
   "newsletter": {
     "email": {
       "label": "Email",
