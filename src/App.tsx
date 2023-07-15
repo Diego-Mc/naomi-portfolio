@@ -23,7 +23,7 @@ export default function App() {
       theme={defaultTheme}
       emotionCache={rtlCache}>
       <Header />
-      <Stack dir="rtl">
+      <Stack dir="rtl" spacing={0}>
         <Hero />
         <MyWorks />
         <About />
