@@ -1,4 +1,4 @@
-import { Stack } from '@mantine/core'
+import { Space, Stack } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { useCollectionDataOnce } from 'react-firebase-hooks/firestore'
 import { ArtworksSchema } from '../../schemas/firestore/artworks.schema'
@@ -15,11 +15,11 @@ export function MyWorks() {
   if (!values) return null
 
   return (
-    <Stack py={64} spacing={32} sx={{ backgroundColor: 'white' }}>
+    <Stack py={42} spacing={32} sx={{ backgroundColor: 'white' }}>
       <Headline
         title={t('title')}
         mx={MARGINS_X}
-        cta={{ text: t('cta'), href: 'www.google.com' }}
+        // cta={{ text: t('cta'), href: 'www.google.com' }} //TODO: add when page is ready
       />
       <Marquee startOnScreen>
         {values.map(({ url, alt, title }) => (
@@ -31,6 +31,7 @@ export function MyWorks() {
           />
         ))}
       </Marquee>
+      <Space />
     </Stack>
   )
 }
