@@ -8,8 +8,8 @@ export function Hero() {
   const { t } = useTranslation('hero')
 
   return (
-    <BackgroundImage src={'bg5.png'} className={classes.imageBg}>
-      <BackgroundImage src={'top5.png'} className={classes.imageTop}>
+    <BackgroundImage src={'hero-bg.png'} className={classes.imageBg}>
+      <BackgroundImage src={'statues.png'} className={classes.imageTop}>
         {/* TODO: find a way to create this image so we will have translations - if it's an optimized way, another option is to recreate the effect with javascript */}
         {/* <BackgroundImage src={'test.png'} className={classes.titlesImage}> */}
         <Center className={classes.titlesContainer}>
@@ -21,7 +21,7 @@ export function Hero() {
               {t('fullName')}
             </Title>
           </Box>
-          <Image src={'fg.png'} className={classes.imageFg} />
+          <img src={'naomi.png'} className={classes.imageFg} />
         </Center>
         {/* </BackgroundImage> */}
       </BackgroundImage>

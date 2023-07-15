@@ -19,6 +19,8 @@ export const useStyles = createStyles((theme) => {
       position: 'absolute',
       bottom: 0,
       pointerEvents: 'none',
+      height: '50vh',
+      left: 0,
     },
     titlesImage: {
       backgroundSize: 'auto',
@@ -27,14 +29,14 @@ export const useStyles = createStyles((theme) => {
     },
     imageBg: {
       backgroundPosition: 'bottom',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
+      backgroundSize: '80vh',
+      backgroundRepeat: 'repeat-x',
       backgroundAttachment: 'fixed',
     },
     imageTop: {
-      backgroundPosition: 'top',
-      backgroundSize: 'contain',
-      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'bottom',
+      backgroundSize: '80vh',
+      backgroundRepeat: 'repeat-x',
       backgroundAttachment: 'fixed',
     },
   }
