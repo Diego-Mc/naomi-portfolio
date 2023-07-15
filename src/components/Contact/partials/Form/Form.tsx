@@ -3,7 +3,7 @@ import { Button, Group, Box } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { FormField } from '../../../FormField/FormField'
 import { useSendMail } from '../../../../services/useSendMail'
-import { ContactFormValues } from '../../../../../firebase.functions.types'
+import { ContactFormValues } from '../../../../../common/types/firebase.functions.types'
 
 // TODO: for UX: save info to localstorage after encryption, include date and check it before applying, if expired remove. on send also remove.
 

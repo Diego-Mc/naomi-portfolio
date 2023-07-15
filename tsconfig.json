@@ -27,7 +27,7 @@
     "env.d.ts",
     "vite.config.ts",
     "types.d.ts",
-    "firebase.functions.types.ts"
+    "common"
   ],
   "exclude": ["functions", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
