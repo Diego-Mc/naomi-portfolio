@@ -29,7 +29,8 @@ export default function App() {
         <About />
         <Contact />
         <ArtProcess />
-        <Newsletter />
+        {/* TODO: add newsletter once a solid plan for it is up */}
+        {/* <Newsletter /> */}
         <Footer />
       </Stack>
     </MantineProvider>
