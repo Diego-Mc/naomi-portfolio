@@ -1,4 +1,4 @@
-import { Box, Space, Stack, ThemeIcon, Title } from '@mantine/core'
+import { Box, Stack, ThemeIcon, Title } from '@mantine/core'
 import { Headline } from '../Headline/Headline'
 import { MARGIN_X } from '../../theme'
 import { Steps } from './partials/Steps/Steps'

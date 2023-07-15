@@ -1,4 +1,4 @@
-import { BackgroundImage, Box, Center, Image, Text, Title } from '@mantine/core'
+import { BackgroundImage, Box, Center, Image, Title } from '@mantine/core'
 import { useStyles } from './Hero.styles'
 import { useTranslation } from 'react-i18next'
 

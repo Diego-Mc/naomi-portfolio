@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Group, Stack, Text, Title } from '@mantine/core'
+import { Grid, Stack, Title } from '@mantine/core'
 import { Form } from './partials/Form/Form'
 import { useTranslation } from 'react-i18next'
 import { MARGIN_X } from '../../theme'

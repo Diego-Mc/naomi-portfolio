@@ -1,13 +1,11 @@
 import {
   BackgroundImage,
-  Box,
   Center,
   Grid,
   Stack,
   Text,
   Title,
 } from '@mantine/core'
-import { IconPhone } from '@tabler/icons-react'
 
 type Props = {
   title: string

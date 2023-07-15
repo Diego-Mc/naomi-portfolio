@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Group, Stack, ThemeIcon } from '@mantine/core'
+import { Box, Flex, Grid, ThemeIcon } from '@mantine/core'
 import { Card } from '../Card/Card'
 import { useTranslation } from 'react-i18next'
 

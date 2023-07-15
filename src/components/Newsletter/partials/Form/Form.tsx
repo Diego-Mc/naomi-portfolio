@@ -1,5 +1,5 @@
 import { useForm, isEmail } from '@mantine/form'
-import { Button, Group, Box } from '@mantine/core'
+import { Box } from '@mantine/core'
 import { useTranslation } from 'react-i18next'
 import { FormField } from '../../../FormField/FormField'
 
