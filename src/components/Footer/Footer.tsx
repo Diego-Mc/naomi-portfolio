@@ -7,7 +7,7 @@ export function Footer() {
   const { t } = useTranslation('footer')
 
   return (
-    <Group grow sx={{ backgroundColor: 'white' }} py={32} px={MARGIN_X}>
+    <Group grow sx={{ backgroundColor: 'white' }} py={16} px={MARGIN_X}>
       <Text ta="start" fz="xs">
         {t('copyText')}
       </Text>

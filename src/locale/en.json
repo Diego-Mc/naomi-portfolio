@@ -19,9 +19,11 @@
     "cta": "More works"
   },
   "about": {
+    "title": "About",
     "text": "TODO"
   },
   "contact": {
+    "title": "Contact",
     "name": {
       "label": "Name",
       "placeholder": "Your name",
