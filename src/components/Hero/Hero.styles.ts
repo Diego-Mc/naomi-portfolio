@@ -21,6 +21,9 @@ export const useStyles = createStyles((theme) => {
       pointerEvents: 'none',
       height: '50vh',
       left: 0,
+      [theme.fn.smallerThan('sm')]: {
+        height: '80vw',
+      },
     },
     titlesImage: {
       backgroundSize: 'auto',
@@ -32,12 +35,18 @@ export const useStyles = createStyles((theme) => {
       backgroundSize: '80vh',
       backgroundRepeat: 'repeat-x',
       backgroundAttachment: 'fixed',
+      [theme.fn.smallerThan('sm')]: {
+        backgroundSize: '140vw',
+      },
     },
     imageTop: {
       backgroundPosition: 'bottom',
       backgroundSize: '80vh',
       backgroundRepeat: 'repeat-x',
       backgroundAttachment: 'fixed',
+      [theme.fn.smallerThan('sm')]: {
+        backgroundSize: '140vw',
+      },
     },
   }
 })

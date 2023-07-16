@@ -2,6 +2,7 @@ import {
   BackgroundImage,
   Center,
   Grid,
+  MediaQuery,
   Stack,
   Text,
   Title,
@@ -20,11 +21,13 @@ export function Card(props: Props) {
   return (
     <Grid align="center" columns={12} justify="center" py={36}>
       <Grid.Col span={4} md={12}>
-        <Center px={16} sx={{ transform: 'scale(0.8)' }}>
-          <BackgroundImage src={backgroundUrl}>
-            <img src={imageUrl} />
-          </BackgroundImage>
-        </Center>
+        <MediaQuery smallerThan="xs" styles={{ transform: 'scale(1)' }}>
+          <Center px={16} sx={{ transform: 'scale(0.8)' }}>
+            <BackgroundImage src={backgroundUrl}>
+              <img src={imageUrl} />
+            </BackgroundImage>
+          </Center>
+        </MediaQuery>
       </Grid.Col>
       <Grid.Col
         span={8}

@@ -12,7 +12,7 @@ export function Contact() {
   return (
     <Box sx={{ backgroundColor: 'white' }} py={64}>
       <Headline title={t('title')} mx={MARGINS_X} />
-      <Grid columns={12} px={MARGINS_X} mt={32} gutter={40}>
+      <Grid columns={12} mx={MARGINS_X} mt={32} gutter={40}>
         <Grid.Col span={12} md={6} offsetMd={1}>
           <Center h="100%">
             <Stack align="center" spacing={32} ta="center">
