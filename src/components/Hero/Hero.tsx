@@ -9,11 +9,11 @@ export function Hero() {
 
   return (
     <BackgroundImage src={'hero-bg.png'} className={classes.imageBg}>
-      <BackgroundImage src={'statues.png'} className={classes.imageTop}>
+      <BackgroundImage src={'statues.png'} className={classes.imageBg}>
         {/* TODO: find a way to create this image so we will have translations - if it's an optimized way, another option is to recreate the effect with javascript */}
         {/* <BackgroundImage src={'test.png'} className={classes.titlesImage}> */}
         <Center className={classes.titlesContainer}>
-          <Box mt={{ base: '-30vh', md: 0 }}>
+          <Box mt={{ base: '-30%', md: 0 }}>
             <Title order={4} className={classes.subTitle} px={6}>
               {t('profession')}
             </Title>

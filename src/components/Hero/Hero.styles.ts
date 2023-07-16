@@ -14,15 +14,16 @@ export const useStyles = createStyles((theme) => {
     },
     titlesContainer: {
       height: '100vh',
+      position: 'relative',
     },
     imageFg: {
       position: 'absolute',
       bottom: 0,
       pointerEvents: 'none',
-      height: '50vh',
       left: 0,
+      height: '50%',
       [theme.fn.smallerThan('sm')]: {
-        height: '80vw',
+        height: '40%',
       },
     },
     titlesImage: {
@@ -32,20 +33,11 @@ export const useStyles = createStyles((theme) => {
     },
     imageBg: {
       backgroundPosition: 'bottom',
-      backgroundSize: '80vh',
+      backgroundSize: 'auto 40%',
       backgroundRepeat: 'repeat-x',
       backgroundAttachment: 'fixed',
       [theme.fn.smallerThan('sm')]: {
-        backgroundSize: '140vw',
-      },
-    },
-    imageTop: {
-      backgroundPosition: 'bottom',
-      backgroundSize: '80vh',
-      backgroundRepeat: 'repeat-x',
-      backgroundAttachment: 'fixed',
-      [theme.fn.smallerThan('sm')]: {
-        backgroundSize: '140vw',
+        backgroundAttachment: 'initial',
       },
     },
   }
