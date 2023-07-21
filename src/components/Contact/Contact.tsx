@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Stack, Text, Title } from '@mantine/core'
+import { Anchor, Box, Center, Grid, Stack, Text, Title } from '@mantine/core'
 import { Form } from './partials/Form/Form'
 import { useTranslation } from 'react-i18next'
 import { MARGINS_X } from '../../theme'
@@ -17,7 +17,14 @@ export function Contact() {
           <Center h="100%">
             <Stack align="center" spacing={32} ta="center">
               <Title order={4}>{t('ctaMessage')}</Title>
-              <Text>{t('ctaDescription')}</Text>
+              <Box>
+                <Text>{t('ctaDescription')}</Text>
+                <Anchor
+                  sx={{ color: 'inherit' }}
+                  href="mailto:naomi@naomikrispel.com">
+                  <Text>naomi@naomikrispel.com</Text>
+                </Anchor>
+              </Box>
               <Text>{t('ctaEnd')}</Text>
             </Stack>
           </Center>

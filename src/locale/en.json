@@ -5,77 +5,83 @@
     }
   },
   "header": {
-    "myWorks": "My works",
-    "about": "About",
+    "myWorks": "My Works",
+    "about": "About Me",
     "contact": "Contact",
-    "process": "Process"
+    "process": "Creation Process"
   },
   "hero": {
     "fullName": "Naomi Krispel",
-    "profession": "Digital Illustrator · Cartoonist"
+    "profession": "Digital Illustrator · Comic Artist"
   },
   "myWorks": {
-    "title": "My works",
-    "cta": "More works"
+    "title": "My Works",
+    "cta": "More Works"
   },
   "about": {
-    "title": "About",
-    "text": "TODO"
+    "title": "About Me",
+    "text": {
+      "p1": "Hi! I'm Naomi, a drawer and comic artist.",
+      "p2": "What are the artistic expressions that allow us to express ourselves in the most truthful way? For me, it's comics. Since I was 13, comics have been my tool to translate my thoughts, my experiences, and the world I see into sketches and lines on paper.",
+      "p3": "I believe that art does not have to be realistic to be truthful. My drawings are simple at first glance, but every line, every shape, and every color tells a story. They reflect my personality, my humor, and my love for what I do.",
+      "p4": "I draw, but essentially, I illustrate stories. My comics reflect the world at eye level, with a cynical smile and a light heart. I enjoy breaking conventions, playing with expectations, and making people think and smile.",
+      "p5": "So if you love comics that are not just black and white, if you are looking for something slightly different, if you want to try art that is both light and deep - you are invited to contact me. I am waiting to hear from you and create your next story in lines and colors."
+    }
   },
   "contact": {
     "title": "Contact",
     "name": {
       "label": "Name",
-      "placeholder": "Your name",
-      "error": "Name must be at least {{min}} characters long"
+      "placeholder": "Your Name",
+      "error": "Field must be at least {{min}} letters long"
     },
     "email": {
       "label": "Email",
-      "placeholder": "Your email",
-      "error": "Invalid email"
+      "placeholder": "Your Email",
+      "error": "Invalid Email"
     },
     "subject": {
       "label": "Subject",
-      "placeholder": "Your subject",
-      "error": "Subject must be {{min}}-{{max}} characters long"
+      "placeholder": "Subject",
+      "error": "Field must be {{min}}-{{max}} letters long"
     },
     "message": {
       "label": "Message",
-      "placeholder": "Your message",
-      "error": "message must be at least {{min}} characters long"
+      "placeholder": "Your Message",
+      "error": "Field must be at least {{min}} letters long"
     },
-    "ctaMessage": "Lets work together",
-    "ctaDescription": "You can leave a message via the form or just reach me at naomi@naomikrispel.com",
-    "ctaEnd": "Lets create something beautiful together.",
+    "ctaMessage": "I want to work with you!",
+    "ctaDescription": "You can leave me a message here or contact me via email:",
+    "ctaEnd": "Looking forward to working with you and creating something beautiful and meaningful.",
     "submit": "Submit"
   },
   "artProcess": {
-    "title": "Art Process",
+    "title": "Creation Process",
     "cards": {
       "contact": {
         "title": "Contact",
-        "description": "Reaching out to you"
+        "description": "After receiving your message, I will contact you personally to understand what you want me to create."
       },
       "sketches": {
-        "title": "Sketching",
-        "description": "Sketching out ideas"
+        "title": "Sketches",
+        "description": "I will send you up to three initial sketches based on your request."
       },
       "fixes": {
-        "title": "Fixes",
-        "description": "Fixing stuff"
+        "title": "Corrections",
+        "description": "After your feedback, final minor corrections will be made to arrive at an accurate final result."
       }
     },
-    "lastStep": "It's here"
+    "lastStep": "It's yours!"
   },
   "newsletter": {
     "email": {
       "label": "Email",
-      "placeholder": "Your email",
-      "error": "Invalid email"
+      "placeholder": "Your Email",
+      "error": "Invalid Email"
     },
-    "ctaMessage": "Sign up to newsletter"
+    "ctaMessage": "Subscribe to Newsletter"
   },
   "footer": {
-    "copyText": "Naomi Krispel · copyright 2023"
+    "copyText": "Naomi Krispel · Copyright 2023"
   }
 }
