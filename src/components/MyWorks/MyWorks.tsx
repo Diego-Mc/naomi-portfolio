@@ -101,16 +101,18 @@ export function MyWorks() {
         />
       </Flex>
       <Marquee startOnScreen>
-        {values.map(({ url, alt, title, tagGroup, urls }) => (
-          <MarqueeImage
-            key={url}
-            url={url}
-            urls={urls}
-            alt={alt}
-            title={title}
-            tagGroup={tagGroup}
-          />
-        ))}
+        {values
+          .filter(({ tagGroup }) => workType === 'all' || tagGroup === workType)
+          .map(({ url, alt, title, tagGroup, urls }) => (
+            <MarqueeImage
+              key={url}
+              url={url}
+              urls={urls}
+              alt={alt}
+              title={title}
+              tagGroup={tagGroup}
+            />
+          ))}
       </Marquee>
       <Space />
     </Stack>
