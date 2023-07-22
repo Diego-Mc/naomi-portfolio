@@ -16,7 +16,16 @@
   },
   "myWorks": {
     "title": "My Works",
-    "cta": "More Works"
+    "cta": "More Works",
+    "tags": {
+      "all": "all",
+      "drawings": "drawings",
+      "comics": "comics",
+      "animations": "animations",
+      "drawings_one": "drawing",
+      "comics_one": "comic",
+      "animations_one": "animation"
+    }
   },
   "about": {
     "title": "About Me",

@@ -16,7 +16,16 @@
   },
   "myWorks": {
     "title": "העבודות שלי",
-    "cta": "עוד עבודות"
+    "cta": "עוד עבודות",
+    "tags": {
+      "all": "הכל",
+      "drawings": "ציורים",
+      "comics": "קומיקסים",
+      "animations": "אנימציות",
+      "drawings_one": "ציור",
+      "comics_one": "קומיקס",
+      "animations_one": "אנימציה"
+    }
   },
   "about": {
     "title": "מי אני",
